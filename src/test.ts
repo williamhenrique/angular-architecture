@@ -8,8 +8,9 @@ import {
 } from '@angular/platform-browser-dynamic/testing';
 
 declare const require: {
+  // tslint:disable-next-line: bool-param-default
   context(path: string, deep?: boolean, filter?: RegExp): {
-    keys(): string[];
+    keys(): Array<string>;
     <T>(id: string): T;
   };
 };
@@ -22,4 +23,5 @@ getTestBed().initTestEnvironment(
 // Then we find all the tests.
 const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
+// tslint:disable-next-line: no-ignored-return
 context.keys().map(context);
