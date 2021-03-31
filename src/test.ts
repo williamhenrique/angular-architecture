@@ -8,7 +8,6 @@ import {
 } from '@angular/platform-browser-dynamic/testing';
 
 declare const require: {
-  // tslint:disable-next-line: bool-param-default
   context(path: string, deep?: boolean, filter?: RegExp): {
     keys(): Array<string>;
     <T>(id: string): T;
