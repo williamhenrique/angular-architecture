@@ -1,0 +1,10 @@
+<po-widget *ngFor="let item of data"
+  class="po-md-3 "
+  p-height="210"
+  p-title="Developer"
+>
+  <div class="po-font-subtitle po-text-center">{{item.name}}, {{item.age}} </div>
+  <div class="po-text-center">
+    <po-tag class="po-m-1" [p-color]="getRandomColor()" [p-value]="item" *ngFor="let item of item.skills" ></po-tag>
+  </div>
+</po-widget>

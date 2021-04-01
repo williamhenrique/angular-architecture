@@ -1,0 +1,24 @@
+{
+  "devs": [
+    {
+      "name": "Vituxo",
+      "age": 31,
+      "skills": ["Musico", "Trocar Lampadas sem escada"]
+    },
+    {
+      "name": "Caiquera",
+      "age": 22,
+      "skills": ["Novão", "Fuma Narguila"]
+    },
+    {
+      "name": "Gameleira",
+      "age": 20,
+      "skills": ["Não abre o Mic", "Xingar no portão"]
+    },
+    {
+      "name": "Deia Mobilete",
+      "age": 23,
+      "skills": ["Sedanapo", "Faz tudo para o Tuty"]
+    }
+  ]
+}

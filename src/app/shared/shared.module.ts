@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedComponent } from './shared.component';
+import { PoModule, PoTableModule, PoWidgetModule } from '@po-ui/ng-components';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    PoModule,
+    PoWidgetModule,
+    PoTableModule
   ],
-  declarations: [SharedComponent]
+  declarations: [],
+  exports: [
+    PoModule,
+    PoWidgetModule,
+    PoTableModule
+  ]
 })
 export class SharedModule { }

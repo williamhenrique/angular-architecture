@@ -1,8 +1,9 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpService } from './http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
-  console.log(parentModule, 'CoreModule')
   if (parentModule) {
     const msg = `${moduleName} has already been loaded. Import Core modules in the AppModule only.`;
     throw new Error(msg);
@@ -12,7 +13,11 @@ export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
+  ],
+  providers: [
+    HttpService
   ]
 })
 export class CoreModule {
